@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab",
+  "version": "1.0.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3YAQCEwnzSt3GdZ9CMc2PDt0CzbntlDCZFhEACi9SAk3fLIgA7/jfA860UgqHw/wwgo4om7ipQpuDumhGRh/Ov07IyZxQ6J7tN1y8N/UDIPEI9eKlTAgDrY8kgYvdReL+VrqwGlbd10bGrt+83He7Q1gZpdhj9tqNtxL291g0Vj1rrZvBlT3LcgPRZW45J9G2TB5emRc081/C1xseWMe5tOu2wlbJScbGZ8bJxA03jwNetYIVquMfhJZnhekm2LiFhxPWMZs5gFaUu3Rk/p460+bEMSpNais4PhrvJcATQ+NNYldi3h9vKlbmXfYyqqvwCBdgK4XWaCzim1hENTbhQIDAQAB",
+  "description": "Custom new tab dashboard with calendar and announcements.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "identity",
+    "identity.email",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "https://www.googleapis.com/*",
+    "https://accounts.google.com/*"
+  ],
+ "oauth2": {
+  "client_id": "542366028313-4tvn3vmvejhfff7mhjeotl3gcpo3lmfe.apps.googleusercontent.com",
+  "scopes": [
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.googleapis.com/auth/calendar.events",
+    "https://www.googleapis.com/auth/calendar.readonly",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+  ]
+},
+  "action": {
+    "default_title": "Dashboard"
+  }
+}
